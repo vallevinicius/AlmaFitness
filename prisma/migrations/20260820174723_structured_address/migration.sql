@@ -18,7 +18,7 @@
 
 */
 -- AlterTable
-ALTER TABLE `customer` DROP COLUMN `address`,
+ALTER TABLE `Customer` DROP COLUMN `address`,
     ADD COLUMN `cep` VARCHAR(191) NOT NULL,
     ADD COLUMN `city` VARCHAR(191) NOT NULL,
     ADD COLUMN `complement` VARCHAR(191) NULL,
@@ -28,7 +28,7 @@ ALTER TABLE `customer` DROP COLUMN `address`,
     ADD COLUMN `street` VARCHAR(191) NOT NULL;
 
 -- AlterTable
-ALTER TABLE `order` DROP COLUMN `address`,
+ALTER TABLE `Order` DROP COLUMN `address`,
     ADD COLUMN `cep` VARCHAR(191) NOT NULL,
     ADD COLUMN `city` VARCHAR(191) NOT NULL,
     ADD COLUMN `complement` VARCHAR(191) NULL,
